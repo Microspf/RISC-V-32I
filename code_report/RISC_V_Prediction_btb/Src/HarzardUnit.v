@@ -1,14 +1,5 @@
 `timescale 1ns / 1ps
-//////////////////////////////////////////////////////////////////////////////////
-// Company: USTC ESLAB（Embeded System Lab）
-// Engineer: Haojun Xia & Xuan Wang
-// Create Date: 2019/02/22
-// Design Name: RISCV-Pipline CPU
-// Module Name: HarzardUnit
-// Target Devices: Nexys4
-// Tool Versions: Vivado 2017.4.1
-// Description: Deal with harzards in pipline
-//////////////////////////////////////////////////////////////////////////////////
+
 module HarzardUnit(
     input wire CpuRst, ICacheMiss, DCacheMiss, 
     input wire BranchE, JalrE, JalD, BranchPredictedE,

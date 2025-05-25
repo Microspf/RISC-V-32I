@@ -1,14 +1,5 @@
 `timescale 1ns / 1ps
-//////////////////////////////////////////////////////////////////////////////////
-// Company: USTC ESLAB��Embeded System Lab��
-// Engineer: Haojun Xia
-// Create Date: 2019/02/08
-// Design Name: RISCV-Pipline CPU
-// Module Name: ControlUnit
-// Target Devices: Nexys4
-// Tool Versions: Vivado 2017.4.1
-// Description: RISC-V Instruction Decoder
-//////////////////////////////////////////////////////////////////////////////////
+
 `include "Parameters.v"   
 module ControlUnit(
     input wire [6:0] Op,
@@ -86,7 +77,7 @@ module ControlUnit(
                 default:AluContrlD<=`AND;    //ANDI     3'b111                                                    
             endcase
         end
-        7'b0110011:begin    //寄存器寄存器型算数�?�辑计算
+        7'b0110011:begin    //寄存器寄存器型算数�?�辑计算
             RegWriteD<=`LW;
             MemWriteD<=4'b0000;
             ImmType<=`RTYPE;
@@ -151,7 +142,7 @@ module ControlUnit(
             AluContrlD<=`ADD;
             ImmType<=`JTYPE;       
         end
-        7'b1100111:begin    //JALR      I型指�?
+        7'b1100111:begin    //JALR      I型指�?
             RegWriteD<=`LW;
             MemWriteD<=4'b0000;
             AluContrlD<=`ADD;
@@ -163,7 +154,7 @@ module ControlUnit(
             ImmType<=`BTYPE;
             AluContrlD<=`ADD;   
         end
-        default:begin       //无效指令或�?�空指令
+        default:begin       //无效指令或�?�空指令
             RegWriteD<=`NOREGWRITE;
             MemWriteD<=4'b0000;
             AluContrlD<=`ADD;

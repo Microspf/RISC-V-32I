@@ -1,4 +1,0 @@
-"abcd"
-"abbaba"
-"aabcaabdaab"
-"aaaaa"

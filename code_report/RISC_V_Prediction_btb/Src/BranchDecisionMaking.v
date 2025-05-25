@@ -1,14 +1,5 @@
 `timescale 1ns / 1ps
-//////////////////////////////////////////////////////////////////////////////////
-// Company: USTC ESLAB（Embeded System Lab）
-// Engineer: Haojun Xia
-// Create Date: 2019/03/14 12:03:15
-// Design Name: RISCV-Pipline CPU
-// Module Name: BranchDecisionMaking
-// Target Devices: Nexys4
-// Tool Versions: Vivado 2017.4.1
-// Description: Decide whether to branch 
-//////////////////////////////////////////////////////////////////////////////////
+
 `include "Parameters.v"   
 module BranchDecisionMaking(
     input wire [2:0] BranchTypeE,

@@ -1,14 +1,5 @@
 `timescale 1ns / 1ps
-//////////////////////////////////////////////////////////////////////////////////
-// Company: USTC ESLAB£¨Embeded System Lab£©
-// Engineer: Haojun Xia
-// Create Date: 2019/02/08
-// Design Name: RISCV-Pipline CPU
-// Module Name: ALU
-// Target Devices: Nexys4
-// Tool Versions: Vivado 2017.4.1
-// Description: ALU unit of RISCV CPU
-//////////////////////////////////////////////////////////////////////////////////
+
 `include "Parameters.v"   
 module ALU(
     input wire [31:0] Operand1,

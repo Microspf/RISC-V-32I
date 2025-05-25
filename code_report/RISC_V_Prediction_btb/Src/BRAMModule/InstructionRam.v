@@ -1,17 +1,4 @@
 `timescale 1ns / 1ps
-//////////////////////////////////////////////////////////////////////////////////
-// Company: USTC ESLAB
-// Engineer: Xuan Wang (wgg@mail.ustc.edu.cn)
-// 
-// Create Date: 2019/02/08 16:29:41
-// Design Name: RISCV-Pipline CPU
-// Module Name: InstructionRamWrapper
-// Target Devices: Nexys4
-// Tool Versions: Vivado 2017.4.1
-// Description: a Verilog-based ram which can be systhesis as BRAM
-// 
-//////////////////////////////////////////////////////////////////////////////////
-
 
 module InstructionRam(
     input  clk,
