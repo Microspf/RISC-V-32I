@@ -1,14 +1,5 @@
 `timescale 1ns / 1ps
-//////////////////////////////////////////////////////////////////////////////////
-// Company: USTC ESLAB（Embeded System Lab�?
-// Engineer: Haojun Xia(xhjustc@mail.ustc.edu.cn)
-// Create Date: 2019/02/08 16:29:41
-// Design Name: RISCV-Pipline CPU
-// Module Name: RV32Core
-// Target Devices: Nexys4
-// Tool Versions: Vivado 2017.4.1
-// Description: Top level of our CPU Core
-//////////////////////////////////////////////////////////////////////////////////
+
 module RV32Core(
     input wire CPU_CLK,
     input wire CPU_RST,
