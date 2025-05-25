@@ -1,10 +1,5 @@
 `timescale 1ns / 1ps
-//`define DataRamContentLoadPath "C:\\Users\\spf\\Documents\\GitHub\\RISC-V-32I\\code_report\\RISC_V_Prediction_btb\\Simulation\\SimFiles\\3testAll.data"
-//`define InstRamContentLoadPath "C:\\Users\\spf\\Documents\\GitHub\\RISC-V-32I\\code_report\\RISC_V_Prediction_btb\\Simulation\\SimFiles\\3testAll.inst"
-//`define DataRamContentLoadPath "C:\\Users\\spf\\Documents\\GitHub\\RISC-V-32I\\code_report\\RISC_V_Prediction_btb\\Simulation\\SimFiles\\Number2Ascii.data"
-//`define InstRamContentLoadPath "C:\\Users\\spf\\Documents\\GitHub\\RISC-V-32I\\code_report\\RISC_V_Prediction_btb\\Simulation\\SimFiles\\Number2Ascii.inst"
-//`define DataRamContentLoadPath "C:\\Users\\spf\\Documents\\GitHub\\RISC-V-32I\\code_report\\RISC_V_Prediction_btb\\Simulation\\SimFiles\\Fibonacci.data"
-//`define InstRamContentLoadPath "C:\\Users\\spf\\Documents\\GitHub\\RISC-V-32I\\code_report\\RISC_V_Prediction_btb\\Simulation\\SimFiles\\Fibonacci.inst"
+
 `define DataRamContentLoadPath "C:\\Users\\spf\\Documents\\GitHub\\RISC-V-32I\\code_report\\RISC_V_Prediction_btb\\Simulation\\SimFiles\\btb.data"
 `define InstRamContentLoadPath "C:\\Users\\spf\\Documents\\GitHub\\RISC-V-32I\\code_report\\RISC_V_Prediction_btb\\Simulation\\SimFiles\\btb.inst"
 `define DataRamContentSavePath "C:\\Users\\spf\\Documents\\GitHub\\RISC-V-32I\\code_report\\RISC_V_Prediction_btb\\Simulation\\SimFiles\\DataRamContent.txt"
@@ -23,19 +18,20 @@
 // 每次外层循环开始，重置x5的值
 // 内层循环
 14: addi x5, x6, 0
-18: addi x5, x5, 1
+18: beq x6,x7, 2 // x6=x7,跳出外层循环
+1c: addi x5, x5, 1
 // 内层bne共执行3+2+1=6次
 // 外层第1次执行前x5=1，内层第一次执行时，BTB中不存在匹配的项，分支成功，存入BTB表中
 // 外层第2次执行前x5=2，内层第一次执行时，BTB中存在匹配的项，分支成功
 // 外层第3次执行前x5=3，内层第一次执行时，BTB中不存在匹配的项，分支失败，正常执行指令，不修改BTB
-1c: bne x5,x7, -2
+20: bne x5,x7, -2
 // 外层bne共执行3次
 // 第1次执行前x6=1，BTB中不存在匹配的项，分支成功，存入BTB表中
 // 第2次执行前x6=2，BTB中存在匹配的项，分支成功
 // 第3次执行前x6=3，BTB中存在匹配的项，分支失败，删除BTB中对应的项
-20: bne x6, x7, -8
-24: addi x6, x6, 1
-25: addi x3, x0, 1
+24: bne x6, x7, -20
+28: addi x6, x6, 1
+2c: addi x3, x0, 1
 */
 
 module testBench(
@@ -142,7 +138,7 @@ module testBench(
         $display("Start Instruction Execution!"); 
         #10;   
         CPU_RST = 1'b1;
-        #10;   
+        #100;   
         CPU_RST = 1'b0;
         #40000 												// waiting for instruction Execution to End
         $display("Finish Instruction Execution!"); 

@@ -11,15 +11,15 @@
       </db_ref>
    </db_ref_list>
    <zoom_setting>
-      <ZoomStartTime time="16427070fs"></ZoomStartTime>
-      <ZoomEndTime time="16450651fs"></ZoomEndTime>
-      <Cursor1Time time="16441000fs"></Cursor1Time>
+      <ZoomStartTime time="15580000fs"></ZoomStartTime>
+      <ZoomEndTime time="17990001fs"></ZoomEndTime>
+      <Cursor1Time time="16579000fs"></Cursor1Time>
    </zoom_setting>
    <column_width_setting>
-      <NameColumnWidth column_width="259"></NameColumnWidth>
-      <ValueColumnWidth column_width="90"></ValueColumnWidth>
+      <NameColumnWidth column_width="272"></NameColumnWidth>
+      <ValueColumnWidth column_width="85"></ValueColumnWidth>
    </column_width_setting>
-   <WVObjectSize size="12" />
+   <WVObjectSize size="8" />
    <wvobject fp_name="/testBench/CPU_CLK" type="logic">
       <obj_property name="ElementShortName">CPU_CLK</obj_property>
       <obj_property name="ObjectShortName">CPU_CLK</obj_property>
@@ -28,44 +28,28 @@
       <obj_property name="ElementShortName">CPU_RST</obj_property>
       <obj_property name="ObjectShortName">CPU_RST</obj_property>
    </wvobject>
-   <wvobject fp_name="/testBench/CPU_Debug_DataRAM_A2" type="array">
-      <obj_property name="ElementShortName">CPU_Debug_DataRAM_A2[31:0]</obj_property>
-      <obj_property name="ObjectShortName">CPU_Debug_DataRAM_A2[31:0]</obj_property>
-   </wvobject>
-   <wvobject fp_name="/testBench/CPU_Debug_DataRAM_WD2" type="array">
-      <obj_property name="ElementShortName">CPU_Debug_DataRAM_WD2[31:0]</obj_property>
-      <obj_property name="ObjectShortName">CPU_Debug_DataRAM_WD2[31:0]</obj_property>
-   </wvobject>
-   <wvobject fp_name="/testBench/CPU_Debug_DataRAM_WE2" type="array">
-      <obj_property name="ElementShortName">CPU_Debug_DataRAM_WE2[3:0]</obj_property>
-      <obj_property name="ObjectShortName">CPU_Debug_DataRAM_WE2[3:0]</obj_property>
-   </wvobject>
-   <wvobject fp_name="/testBench/CPU_Debug_DataRAM_RD2" type="array">
-      <obj_property name="ElementShortName">CPU_Debug_DataRAM_RD2[31:0]</obj_property>
-      <obj_property name="ObjectShortName">CPU_Debug_DataRAM_RD2[31:0]</obj_property>
-   </wvobject>
-   <wvobject fp_name="/testBench/CPU_Debug_InstRAM_A2" type="array">
-      <obj_property name="ElementShortName">CPU_Debug_InstRAM_A2[31:0]</obj_property>
-      <obj_property name="ObjectShortName">CPU_Debug_InstRAM_A2[31:0]</obj_property>
-   </wvobject>
-   <wvobject fp_name="/testBench/CPU_Debug_InstRAM_WD2" type="array">
-      <obj_property name="ElementShortName">CPU_Debug_InstRAM_WD2[31:0]</obj_property>
-      <obj_property name="ObjectShortName">CPU_Debug_InstRAM_WD2[31:0]</obj_property>
-   </wvobject>
-   <wvobject fp_name="/testBench/CPU_Debug_InstRAM_WE2" type="array">
-      <obj_property name="ElementShortName">CPU_Debug_InstRAM_WE2[3:0]</obj_property>
-      <obj_property name="ObjectShortName">CPU_Debug_InstRAM_WE2[3:0]</obj_property>
-   </wvobject>
-   <wvobject fp_name="/testBench/CPU_Debug_InstRAM_RD2" type="array">
-      <obj_property name="ElementShortName">CPU_Debug_InstRAM_RD2[31:0]</obj_property>
-      <obj_property name="ObjectShortName">CPU_Debug_InstRAM_RD2[31:0]</obj_property>
-   </wvobject>
    <wvobject fp_name="/testBench/PC" type="array">
       <obj_property name="ElementShortName">PC[31:0]</obj_property>
       <obj_property name="ObjectShortName">PC[31:0]</obj_property>
    </wvobject>
-   <wvobject fp_name="/testBench/i" type="array">
-      <obj_property name="ElementShortName">i[31:0]</obj_property>
-      <obj_property name="ObjectShortName">i[31:0]</obj_property>
+   <wvobject fp_name="/testBench/RV32Core1/IDSegReg1/BranchPredictedF" type="logic">
+      <obj_property name="ElementShortName">BranchPredictedF</obj_property>
+      <obj_property name="ObjectShortName">BranchPredictedF</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testBench/RV32Core1/IDSegReg1/BranchPredictedD" type="logic">
+      <obj_property name="ElementShortName">BranchPredictedD</obj_property>
+      <obj_property name="ObjectShortName">BranchPredictedD</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testBench/RV32Core1/RegisterFile1/RegFile[7]" type="array">
+      <obj_property name="ElementShortName">[7][31:0]</obj_property>
+      <obj_property name="ObjectShortName">[7][31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testBench/RV32Core1/RegisterFile1/RegFile[6]" type="array">
+      <obj_property name="ElementShortName">[6][31:0]</obj_property>
+      <obj_property name="ObjectShortName">[6][31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testBench/RV32Core1/RegisterFile1/RegFile[5]" type="array">
+      <obj_property name="ElementShortName">[5][31:0]</obj_property>
+      <obj_property name="ObjectShortName">[5][31:0]</obj_property>
    </wvobject>
 </wave_config>
