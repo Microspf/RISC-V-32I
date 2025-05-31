@@ -4,7 +4,7 @@ Nov  6 2019
 21:57:16
 C:/Users/spf/Documents/GitHub/RISC-V-32I/code_report/RISC_V_Prediction_btb/RISC_V_Prediction_btb.sim/sim_1/behav/xsim/glbl.v,1573089660,verilog,,,,glbl,,,,,,,,
 C:/Users/spf/Documents/GitHub/RISC-V-32I/code_report/RISC_V_Prediction_btb/Simulation/testBench.v,1748157117,verilog,,,,testBench,,,,,,,,
-C:/Users/spf/Documents/GitHub/RISC-V-32I/code_report/RISC_V_Prediction_btb/Src/ALU.v,1748154153,verilog,,C:/Users/spf/Documents/GitHub/RISC-V-32I/code_report/RISC_V_Prediction_btb/Src/BTB.v,C:/Users/spf/Documents/GitHub/RISC-V-32I/code_report/RISC_V_Prediction_btb/Src/Parameters.v,ALU,,,,,,,,
+C:/Users/spf/Documents/GitHub/RISC-V-32I/code_report/RISC_V_Prediction_btb/Src/ALU.v,1748664718,verilog,,C:/Users/spf/Documents/GitHub/RISC-V-32I/code_report/RISC_V_Prediction_btb/Src/BTB.v,C:/Users/spf/Documents/GitHub/RISC-V-32I/code_report/RISC_V_Prediction_btb/Src/Parameters.v,ALU,,,,,,,,
 C:/Users/spf/Documents/GitHub/RISC-V-32I/code_report/RISC_V_Prediction_btb/Src/BRAMModule/DataRam.v,1748154216,verilog,,C:/Users/spf/Documents/GitHub/RISC-V-32I/code_report/RISC_V_Prediction_btb/Src/EXSegReg.v,,DataRam,,,,,,,,
 C:/Users/spf/Documents/GitHub/RISC-V-32I/code_report/RISC_V_Prediction_btb/Src/BRAMModule/InstructionRam.v,1748154211,verilog,,C:/Users/spf/Documents/GitHub/RISC-V-32I/code_report/RISC_V_Prediction_btb/Src/MEMSegReg.v,,InstructionRam,,,,,,,,
 C:/Users/spf/Documents/GitHub/RISC-V-32I/code_report/RISC_V_Prediction_btb/Src/BTB.v,1747545803,verilog,,C:/Users/spf/Documents/GitHub/RISC-V-32I/code_report/RISC_V_Prediction_btb/Src/BranchDecisionMaking.v,,BTB,,,,,,,,
@@ -18,7 +18,7 @@ C:/Users/spf/Documents/GitHub/RISC-V-32I/code_report/RISC_V_Prediction_btb/Src/I
 C:/Users/spf/Documents/GitHub/RISC-V-32I/code_report/RISC_V_Prediction_btb/Src/ImmOperandUnit.v,1747545803,verilog,,C:/Users/spf/Documents/GitHub/RISC-V-32I/code_report/RISC_V_Prediction_btb/Src/BRAMModule/InstructionRam.v,C:/Users/spf/Documents/GitHub/RISC-V-32I/code_report/RISC_V_Prediction_btb/Src/Parameters.v,ImmOperandUnit,,,,,,,,
 C:/Users/spf/Documents/GitHub/RISC-V-32I/code_report/RISC_V_Prediction_btb/Src/MEMSegReg.v,1747545803,verilog,,C:/Users/spf/Documents/GitHub/RISC-V-32I/code_report/RISC_V_Prediction_btb/Src/NPC_Generator.v,,MEMSegReg,,,,,,,,
 C:/Users/spf/Documents/GitHub/RISC-V-32I/code_report/RISC_V_Prediction_btb/Src/NPC_Generator.v,1747545803,verilog,,C:/Users/spf/Documents/GitHub/RISC-V-32I/code_report/RISC_V_Prediction_btb/Src/RV32Core.v,,NPC_Generator,,,,,,,,
-C:/Users/spf/Documents/GitHub/RISC-V-32I/code_report/RISC_V_Prediction_btb/Src/Parameters.v,1747545803,verilog,,,,,,,,,,,,
+C:/Users/spf/Documents/GitHub/RISC-V-32I/code_report/RISC_V_Prediction_btb/Src/Parameters.v,1748665237,verilog,,,,,,,,,,,,
 C:/Users/spf/Documents/GitHub/RISC-V-32I/code_report/RISC_V_Prediction_btb/Src/RV32Core.v,1748153999,verilog,,C:/Users/spf/Documents/GitHub/RISC-V-32I/code_report/RISC_V_Prediction_btb/Src/RegisterFile.v,,RV32Core,,,,,,,,
 C:/Users/spf/Documents/GitHub/RISC-V-32I/code_report/RISC_V_Prediction_btb/Src/RegisterFile.v,1747545803,verilog,,C:/Users/spf/Documents/GitHub/RISC-V-32I/code_report/RISC_V_Prediction_btb/Src/WBSegReg.v,,RegisterFile,,,,,,,,
 C:/Users/spf/Documents/GitHub/RISC-V-32I/code_report/RISC_V_Prediction_btb/Src/WBSegReg.v,1747545803,verilog,,C:/Users/spf/Documents/GitHub/RISC-V-32I/code_report/RISC_V_Prediction_btb/Simulation/testBench.v,,WBSegReg,,,,,,,,
