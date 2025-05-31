@@ -153,13 +153,13 @@ module RV32Core(
 	BTB BTB1(
 		.clk(~CPU_CLK),
 		.rst(CPU_RST),
-		.rd_PC(PCF), //���뵱ǰPC
-		.rd_predicted_PC(BranchPredictedPCF), //���Ԥ�����һ��PC
-		.rd_predicted(BranchPredictedF), //�Ƿ�Ԥ���־
-		.wr_req(BranchPredictedE ^ BranchE), //��ǰԤ���ʵ����ת�����ͬ������Ҫ����BTB
-		.wr_PC(PCE), //wr_reqΪ1 �� ʵ����תʱ��ʹ��
-		.wr_predicted_PC(BrNPC), //wr_reqΪ1 �� ʵ����תʱ��ʹ��
-		.wr_predicted_state_bit(BranchE) //wr_reqΪ1ʱ����ʵ����ת��д��1������д��0
+		.rd_PC(PCF), //当前PC
+		.rd_predicted_PC(BranchPredictedPCF), //预测的下一条PC
+		.rd_predicted(BranchPredictedF), //预测的PC是否有效
+		.wr_req(BranchPredictedE ^ BranchE), //两种情况需写：1.BTB中有但不分支，需删除；2.BTB中无，但分支，需写入
+		.wr_PC(PCE), //wr_req为1时，实际跳转时使用
+		.wr_predicted_PC(BrNPC), //wr_req为1时，实际跳转时使用
+		.wr_predicted_state_bit(BranchE) //wr_req为1时：1.实际分支则BTB无，则对应状态位为有效；否则状态位置零，相当于删除
 	);
 
 

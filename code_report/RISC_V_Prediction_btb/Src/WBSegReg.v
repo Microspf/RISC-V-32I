@@ -1,14 +1,4 @@
 `timescale 1ns / 1ps
-//////////////////////////////////////////////////////////////////////////////////
-// Company: USTC ESLAB£¨Embeded System Lab£©
-// Engineer: Haojun Xia & Xuan Wang
-// Create Date: 2019/02/08
-// Design Name: RISCV-Pipline CPU
-// Module Name: WBSegReg
-// Target Devices: Nexys4
-// Tool Versions: Vivado 2017.4.1
-// Description: Write Back Segment Register
-//////////////////////////////////////////////////////////////////////////////////
 module WBSegReg(
     input wire clk,
     input wire en,

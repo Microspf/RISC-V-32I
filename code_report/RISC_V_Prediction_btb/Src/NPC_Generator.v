@@ -1,14 +1,5 @@
 `timescale 1ns / 1ps
-//////////////////////////////////////////////////////////////////////////////////
-// Company: USTC ESLAB（Embeded System Lab）
-// Engineer: Haojun Xia
-// Create Date: 2019/03/14 11:21:33
-// Design Name: RISCV-Pipline CPU
-// Module Name: NPC_Generator
-// Target Devices: Nexys4
-// Tool Versions: Vivado 2017.4.1
-// Description: Choose Next PC value
-//////////////////////////////////////////////////////////////////////////////////
+// next PC生成
 module NPC_Generator(
     input wire [31:0] PCF,JalrTarget, BranchTarget, JalTarget, BranchPredictedTargetF,PCE,
     input wire BranchE,JalD,JalrE,BranchPredictedF,BranchPredictedE,
@@ -16,15 +7,15 @@ module NPC_Generator(
     );
     always @(*)
     begin
-        if(JalrE)
+        if(JalrE) // jump
             PC_In <= JalrTarget;
         else if(BranchE && ~BranchPredictedE) //预测不跳转但实际跳转
             PC_In <= BranchTarget;
 		else if(~BranchE && BranchPredictedE) //预测跳转但实际不跳转
 			PC_In <= PCE + 4;
-        else if(JalD)
+        else if(JalD) // jump
             PC_In <= JalTarget;
-        else if(BranchPredictedF)
+        else if(BranchPredictedF) // 预测跳转且实际跳转
 			PC_In <= BranchPredictedTargetF;
 		else
             PC_In <= PCF + 4;

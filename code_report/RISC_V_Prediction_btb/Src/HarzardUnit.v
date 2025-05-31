@@ -10,7 +10,7 @@ module HarzardUnit(
     output reg [1:0] Forward1E, Forward2E
     );
     //
-    //Stall and Flush signals generate
+    //存储和刷新信号生成
     always @ (*)
         if(CpuRst)
             {StallF,FlushF,StallD,FlushD,StallE,FlushE,StallM,FlushM,StallW,FlushW} <= 10'b0101010101;

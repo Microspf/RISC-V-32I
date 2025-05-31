@@ -43,7 +43,7 @@ module EXSegReg(
     input wire [1:0] AluSrc2D,
     output reg [1:0] AluSrc2E,
 	//for BTB
-	input wire BranchPredictedD,
+	input wire BranchPredictedD,// 分支预测是否有效
 	output reg BranchPredictedE
     );
     initial begin

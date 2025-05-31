@@ -1,14 +1,4 @@
 `timescale 1ns / 1ps
-//////////////////////////////////////////////////////////////////////////////////
-// Company: USTC ESLAB£¨Embeded System Lab£©
-// Engineer: Haojun Xia
-// Create Date: 2019/02/08
-// Design Name: RISCV-Pipline CPU
-// Module Name: ImmOperandUnit
-// Target Devices: Nexys4
-// Tool Versions: Vivado 2017.4.1
-// Description: Generate different type of Immediate Operand
-//////////////////////////////////////////////////////////////////////////////////
 `include "Parameters.v"   
 module ImmOperandUnit(
     input wire [31:7] In,

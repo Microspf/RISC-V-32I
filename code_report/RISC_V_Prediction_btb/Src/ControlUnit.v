@@ -46,11 +46,7 @@ module ControlUnit(
         begin    //条件分支
             case(Fn3)
             3'b000:BranchTypeD<=`BEQ;    //BEQ
-            3'b001:BranchTypeD<=`BNE;    //BNE
-            3'b100:BranchTypeD<=`BLT;    //BLT
-            3'b101:BranchTypeD<=`BGE;    //BGE 
-            3'b110:BranchTypeD<=`BLTU;    //BLTU
-            default:BranchTypeD<=`BGEU;    //BGEU 3'b111                                                        
+            3'b001:BranchTypeD<=`BNE;    //BNE                                                 
             endcase
         end
         else BranchTypeD <= `NOBRANCH;

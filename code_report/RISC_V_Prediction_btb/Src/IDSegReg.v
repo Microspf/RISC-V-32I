@@ -16,7 +16,7 @@ module IDSegReg(
     input wire [31:0] PCF,
     output reg [31:0] PCD,
 	//for BTB
-	input wire BranchPredictedF,
+	input wire BranchPredictedF,// 分支预测是否有效
 	output reg BranchPredictedD
     );
     
@@ -27,7 +27,7 @@ module IDSegReg(
     always@(posedge clk)
         if(en) begin
             PCD <= clear ? 0 : PCF;
-			BranchPredictedD <= clear ? 1'b0 : BranchPredictedF;
+			BranchPredictedD <= clear ? 1'b0 : BranchPredictedF; // 分支预测是否有效
 		end
     wire [31:0] RD_raw;
     InstructionRam InstructionRamInst (
