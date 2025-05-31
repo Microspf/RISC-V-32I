@@ -1,6 +1,6 @@
 `timescale 1ns / 1ps
-
-module HarzardUnit(
+// 冒险处理单元
+module HarzardUnit( 
     input wire CpuRst, ICacheMiss, DCacheMiss, 
     input wire BranchE, JalrE, JalD, BranchPredictedE,
     input wire [4:0] Rs1D, Rs2D, Rs1E, Rs2E, RdE, RdM, RdW,

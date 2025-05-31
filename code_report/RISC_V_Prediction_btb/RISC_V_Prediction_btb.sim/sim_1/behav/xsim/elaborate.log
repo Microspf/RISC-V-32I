@@ -29,9 +29,9 @@ Compiling module xil_defaultlib.DataExt
 Compiling module xil_defaultlib.HarzardUnit
 Compiling module xil_defaultlib.RV32Core
 Compiling module xil_defaultlib.testBench
-WARNING: [XSIM 43-3373] "C:/Users/spf/Documents/GitHub/RISC-V-32I/code_report/RISC_V_Prediction_btb/Simulation/testBench.v" Line 94. System function $fscanf is used as system task. This system function should have a LHS e.g. x=$fscanf().
-WARNING: [XSIM 43-3373] "C:/Users/spf/Documents/GitHub/RISC-V-32I/code_report/RISC_V_Prediction_btb/Simulation/testBench.v" Line 108. System function $fscanf is used as system task. This system function should have a LHS e.g. x=$fscanf().
-WARNING: [XSIM 43-3373] "C:/Users/spf/Documents/GitHub/RISC-V-32I/code_report/RISC_V_Prediction_btb/Simulation/testBench.v" Line 119. System function $fscanf is used as system task. This system function should have a LHS e.g. x=$fscanf().
-WARNING: [XSIM 43-3373] "C:/Users/spf/Documents/GitHub/RISC-V-32I/code_report/RISC_V_Prediction_btb/Simulation/testBench.v" Line 133. System function $fscanf is used as system task. This system function should have a LHS e.g. x=$fscanf().
+WARNING: [XSIM 43-3373] "C:/Users/spf/Documents/GitHub/RISC-V-32I/code_report/RISC_V_Prediction_btb/Simulation/testBench.v" Line 95. System function $fscanf is used as system task. This system function should have a LHS e.g. x=$fscanf().
+WARNING: [XSIM 43-3373] "C:/Users/spf/Documents/GitHub/RISC-V-32I/code_report/RISC_V_Prediction_btb/Simulation/testBench.v" Line 109. System function $fscanf is used as system task. This system function should have a LHS e.g. x=$fscanf().
+WARNING: [XSIM 43-3373] "C:/Users/spf/Documents/GitHub/RISC-V-32I/code_report/RISC_V_Prediction_btb/Simulation/testBench.v" Line 120. System function $fscanf is used as system task. This system function should have a LHS e.g. x=$fscanf().
+WARNING: [XSIM 43-3373] "C:/Users/spf/Documents/GitHub/RISC-V-32I/code_report/RISC_V_Prediction_btb/Simulation/testBench.v" Line 134. System function $fscanf is used as system task. This system function should have a LHS e.g. x=$fscanf().
 Compiling module xil_defaultlib.glbl
 Built simulation snapshot testBench_behav
