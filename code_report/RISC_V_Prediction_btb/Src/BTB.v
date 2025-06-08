@@ -5,7 +5,7 @@ module BTB #( //Branch Target Buffer，采用直接映射
 	input  clk, rst,
 
 	input [31:0] rd_PC,					//输入PC
-	output reg rd_predicted,			//分支预测有效, 表示rd_PC是跳转指令且在buffer中命中，此时rd_predicted_PC是有效数据
+	output reg rd_predicted,			//分支预测有效, 表示rd_PC指向的指令在buffer中命中，此时rd_predicted_PC是有效数据
 	output reg [31:0] rd_predicted_PC,	//从buffer中得到的预测PC
 	input wr_req,						//写请求信号，预测失败触发
 	input [31:0] wr_PC,					//要写入的分支PC

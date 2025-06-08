@@ -11,15 +11,15 @@
       </db_ref>
    </db_ref_list>
    <zoom_setting>
-      <ZoomStartTime time="72901916fs"></ZoomStartTime>
-      <ZoomEndTime time="72948817fs"></ZoomEndTime>
-      <Cursor1Time time="72911000fs"></Cursor1Time>
+      <ZoomStartTime time="936772fs"></ZoomStartTime>
+      <ZoomEndTime time="1012646fs"></ZoomEndTime>
+      <Cursor1Time time="1000000fs"></Cursor1Time>
    </zoom_setting>
    <column_width_setting>
       <NameColumnWidth column_width="272"></NameColumnWidth>
-      <ValueColumnWidth column_width="80"></ValueColumnWidth>
+      <ValueColumnWidth column_width="75"></ValueColumnWidth>
    </column_width_setting>
-   <WVObjectSize size="7" />
+   <WVObjectSize size="11" />
    <wvobject fp_name="/testBench/CPU_CLK" type="logic">
       <obj_property name="ElementShortName">CPU_CLK</obj_property>
       <obj_property name="ObjectShortName">CPU_CLK</obj_property>
@@ -47,5 +47,21 @@
    <wvobject fp_name="/testBench/RV32Core1/RegisterFile1/RegFile[5]" type="array">
       <obj_property name="ElementShortName">[5][31:0]</obj_property>
       <obj_property name="ObjectShortName">[5][31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testBench/RV32Core1/all_instr_count" type="array">
+      <obj_property name="ElementShortName">all_instr_count[31:0]</obj_property>
+      <obj_property name="ObjectShortName">all_instr_count[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testBench/RV32Core1/branch_instr_count" type="array">
+      <obj_property name="ElementShortName">branch_instr_count[31:0]</obj_property>
+      <obj_property name="ObjectShortName">branch_instr_count[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testBench/RV32Core1/right_predict_count" type="array">
+      <obj_property name="ElementShortName">right_predict_count[31:0]</obj_property>
+      <obj_property name="ObjectShortName">right_predict_count[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testBench/RV32Core1/error_predict_count" type="array">
+      <obj_property name="ElementShortName">error_predict_count[31:0]</obj_property>
+      <obj_property name="ObjectShortName">error_predict_count[31:0]</obj_property>
    </wvobject>
 </wave_config>

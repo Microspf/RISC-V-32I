@@ -16,12 +16,10 @@ module HarzardUnit(
             {StallF,FlushF,StallD,FlushD,StallE,FlushE,StallM,FlushM,StallW,FlushW} <= 10'b0101010101;
         else if(DCacheMiss | ICacheMiss)
             {StallF,FlushF,StallD,FlushD,StallE,FlushE,StallM,FlushM,StallW,FlushW} <= 10'b1010101010;
-        else if((BranchPredictedE ^ BranchE) | JalrE) //BranchPredictedE ^ BranchE为1表示预测结果与实际跳转结果不同
+        else if(BranchPredictedE ^ BranchE) // BranchPredictedE ^ BranchE 为1表示预测结果与实际跳转结果不同
             {StallF,FlushF,StallD,FlushD,StallE,FlushE,StallM,FlushM,StallW,FlushW} <= 10'b0001010000;
         else if(MemToRegE & ((RdE==Rs1D)||(RdE==Rs2D)) )
             {StallF,FlushF,StallD,FlushD,StallE,FlushE,StallM,FlushM,StallW,FlushW} <= 10'b1010010000;
-        else if(JalD)
-            {StallF,FlushF,StallD,FlushD,StallE,FlushE,StallM,FlushM,StallW,FlushW} <= 10'b0001000000;
         else
             {StallF,FlushF,StallD,FlushD,StallE,FlushE,StallM,FlushM,StallW,FlushW} <= 10'b0000000000;
     //Forward Register Source 1
