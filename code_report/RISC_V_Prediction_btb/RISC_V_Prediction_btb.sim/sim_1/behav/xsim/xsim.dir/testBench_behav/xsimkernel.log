@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 Running: xsim.dir/testBench_behav/xsimk.exe -simmode gui -wdb testBench_behav.wdb -simrunnum 0 -socket 50756
 Design successfully loaded
 Design Loading Memory Usage: 6476 KB (Peak: 6476 KB)
@@ -5,3 +6,12 @@ Design Loading CPU Usage: 15 ms
 Simulation completed
 Simulation Memory Usage: 12796 KB (Peak: 12796 KB)
 Simulation CPU Usage: 406 ms
+=======
+Running: xsim.dir/testBench_behav/xsimk.exe -simmode gui -wdb testBench_behav.wdb -simrunnum 0 -socket 49626
+Design successfully loaded
+Design Loading Memory Usage: 6468 KB (Peak: 6468 KB)
+Design Loading CPU Usage: 31 ms
+Simulation completed
+Simulation Memory Usage: 10152 KB (Peak: 10152 KB)
+Simulation CPU Usage: 374 ms
+>>>>>>> parent of 61e3551 (……)

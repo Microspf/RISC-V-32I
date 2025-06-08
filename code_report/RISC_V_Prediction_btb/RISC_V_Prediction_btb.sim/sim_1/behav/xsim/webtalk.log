@@ -2,12 +2,21 @@
 # Webtalk v2019.2 (64-bit)
 # SW Build 2708876 on Wed Nov  6 21:40:23 MST 2019
 # IP Build 2700528 on Thu Nov  7 00:09:20 MST 2019
+<<<<<<< HEAD
 # Start of session at: Sun Jun  8 12:05:58 2025
 # Process ID: 23020
+=======
+# Start of session at: Sat May 31 13:24:41 2025
+# Process ID: 31080
+>>>>>>> parent of 61e3551 (……)
 # Current directory: C:/Users/spf/Documents/GitHub/RISC-V-32I/code_report/RISC_V_Prediction_btb/RISC_V_Prediction_btb.sim/sim_1/behav/xsim
 # Command line: wbtcv.exe -mode batch -source C:/Users/spf/Documents/GitHub/RISC-V-32I/code_report/RISC_V_Prediction_btb/RISC_V_Prediction_btb.sim/sim_1/behav/xsim/xsim.dir/testBench_behav/webtalk/xsim_webtalk.tcl -notrace
 # Log file: C:/Users/spf/Documents/GitHub/RISC-V-32I/code_report/RISC_V_Prediction_btb/RISC_V_Prediction_btb.sim/sim_1/behav/xsim/webtalk.log
 # Journal file: C:/Users/spf/Documents/GitHub/RISC-V-32I/code_report/RISC_V_Prediction_btb/RISC_V_Prediction_btb.sim/sim_1/behav/xsim\webtalk.jou
 #-----------------------------------------------------------
 source C:/Users/spf/Documents/GitHub/RISC-V-32I/code_report/RISC_V_Prediction_btb/RISC_V_Prediction_btb.sim/sim_1/behav/xsim/xsim.dir/testBench_behav/webtalk/xsim_webtalk.tcl -notrace
+<<<<<<< HEAD
 INFO: [Common 17-206] Exiting Webtalk at Sun Jun  8 12:05:59 2025...
+=======
+INFO: [Common 17-206] Exiting Webtalk at Sat May 31 13:24:42 2025...
+>>>>>>> parent of 61e3551 (……)
