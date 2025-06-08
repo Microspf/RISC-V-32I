@@ -19,6 +19,9 @@ module ControlUnit(
     output reg [2:0] ImmType        
     );
     //
+    assign LoadNpcD = JalD | JalrD;
+    assign JalD = (Op==7'b1101111)?1'b1:1'b0;
+    assign JalrD = (Op==7'b1100111)?1'b1:1'b0;
     assign MemToRegD = (Op==7'b0000011)?1'b1:1'b0;
     assign AluSrc1D = (Op==7'b0010111)?1'b1:1'b0;
     // 0: reg, 1: imm, 10, pc
@@ -57,12 +60,20 @@ module ControlUnit(
             ImmType<=`ITYPE;
             case(Fn3)
                 3'b000:AluContrlD<=`ADD;  //ADDI
+                3'b001:AluContrlD<=`SLL;  //SLLI
+                3'b010:AluContrlD<=`SLT;  //SLTI
+                3'b011:AluContrlD<=`SLTU;   //SLTIU
                 3'b100:AluContrlD<=`XOR;    //XORI
+                3'b101:
+                    if(Fn7[5]==1)
+                        AluContrlD<=`SRA;   //SRAI
+                    else
+                        AluContrlD<=`SRL;   //SRLI
                 3'b110:AluContrlD<=`OR;   //ORI
                 default:AluContrlD<=`AND;    //ANDI     3'b111                                                    
             endcase
         end
-        7'b0110011:begin    //寄存器寄存器型算数逻辑计算
+        7'b0110011:begin    //寄存器寄存器型算数�?�辑计算
             RegWriteD<=`LW;
             MemWriteD<=4'b0000;
             ImmType<=`RTYPE;
@@ -73,7 +84,16 @@ module ControlUnit(
                     else
                         AluContrlD<=`ADD;   //ADD
                 end
+                3'b001:AluContrlD<=`SLL;    //SLL
+                3'b010:AluContrlD<=`SLT;    //SLT
+                3'b011:AluContrlD<=`SLTU;    //SLTU
                 3'b100:AluContrlD<=`XOR;    //XOR
+                3'b101:begin
+                    if(Fn7[5]==1)
+                        AluContrlD<=`SRA;   //SRA
+                    else
+                        AluContrlD<=`SRL;   //SRL
+                end  
                 3'b110:AluContrlD<=`OR;    //OR
                 default:AluContrlD<=`AND;    //AND   3'b111                                       
             endcase
@@ -112,13 +132,25 @@ module ControlUnit(
             AluContrlD<=`ADD;
             ImmType<=`UTYPE;
         end
+        7'b1101111:begin    //JAL
+            RegWriteD<=`LW;
+            MemWriteD<=4'b0000;
+            AluContrlD<=`ADD;
+            ImmType<=`JTYPE;       
+        end
+        7'b1100111:begin    //JALR      I型指�?
+            RegWriteD<=`LW;
+            MemWriteD<=4'b0000;
+            AluContrlD<=`ADD;
+            ImmType<=`ITYPE;         
+        end
         7'b1100011:begin    //条件分支 BRANCH
             RegWriteD<=`NOREGWRITE;
             MemWriteD<=4'b0000;
             ImmType<=`BTYPE;
             AluContrlD<=`ADD;   
         end
-        default:begin       //无效指令或空指令
+        default:begin       //无效指令或�?�空指令
             RegWriteD<=`NOREGWRITE;
             MemWriteD<=4'b0000;
             AluContrlD<=`ADD;

@@ -13,6 +13,8 @@ module NPC_Generator(
             PC_In <= BranchTarget;
 		else if(~BranchE && BranchPredictedE) //预测跳转但实际不跳转
 			PC_In <= PCE + 4;
+        else if(JalD) // jump
+            PC_In <= JalTarget;
         else if(BranchPredictedF) // 预测跳转且实际跳转
 			PC_In <= BranchPredictedTargetF;
 		else

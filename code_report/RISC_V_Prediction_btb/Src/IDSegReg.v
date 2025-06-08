@@ -39,8 +39,10 @@ module IDSegReg(
          .dinb   ( WD2        ),
          .doutb  ( RD2        )
      );
-    // 如果没有使能, 输出最后一次读取的结果
-    // 如果clear，则输出0，否则从bram中读取
+     // Add clear and stall support
+    // if chip not enabled, output output last read result
+    // else if chip clear, output 0
+    // else output values from bram
     reg stall_ff= 1'b0;
     reg clear_ff= 1'b0;
     reg [31:0] RD_old=32'b0;
